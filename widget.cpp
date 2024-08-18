@@ -70,10 +70,9 @@ void Widget::initMainWindow()
     ui->btn_close->setIcon(QIcon(":/icon/image/close.png"));
     ui->btn_max->setIcon(QIcon(":/icon/image/max.png"));
     ui->btn_min->setIcon(QIcon(":/icon/image/min.png"));
-    ui->label_icon->setPixmap(QPixmap(":/icon/image/github_40.png"));
+    ui->label_icon->setPixmap(QPixmap(":/icon/image/github_32.png"));
 
-    ui->btn_setting->setText("设置");
-    ui->label_tool_name->setText("CYG-TOOL");
+    ui->label_tool_name->setText("TOOL-BOX");
 }
 
 void Widget::initStyleSheet()
@@ -94,6 +93,7 @@ void Widget::initStyleSheet()
 void Widget::initFuncWidgets()
 {
     ADD_FUNC_WIDGET("KBQ", QWidget);
+    ADD_FUNC_WIDGET("设置", QWidget);
 
     ui->label_func->setText(m_funcWidgets.begin()->first);
     ui->listWidget->setCurrentRow(0);
@@ -120,6 +120,14 @@ void Widget::on_btn_max_clicked()
     else
     {
         this->resize(800,600);
+
+        //居中
+        QScreen *screen = QGuiApplication::primaryScreen();
+        QRect screenGeometry = screen->geometry();
+        int x = (screenGeometry.width() - this->width()) / 2;
+        int y = (screenGeometry.height() - this->height()) / 2;
+        this->move(x, y);
+
         m_curWinSize = 0;
     }
 }

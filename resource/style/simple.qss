@@ -12,11 +12,6 @@ QPushButton {
     border-radius:5px;
 }
 
-QWidget#widget_setting_background{
-    background-color: rgb(255, 255, 255);
-    border-right:1px solid rgb(240,240,240);
-}
-
 QPushButton:hover {
     background-color: rgb(205, 232, 255);
 }
@@ -30,6 +25,7 @@ QListWidget#listWidget{
 }
 
 QListWidget::item {
+    border:none;
     height: 30px;
 }
 
