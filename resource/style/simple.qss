@@ -30,7 +30,7 @@ QListWidget::item {
 }
 
 QListWidget::item:hover {
-    background-color:rgb(205, 232, 255);
+    background-color:rgb(240,240,240);
     border-radius:5px;
 }
 
