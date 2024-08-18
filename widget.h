@@ -2,13 +2,14 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QPoint>
 #include <map>
 #include <QString>
 #include <QListWidgetItem>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
-class Widget;
+class widget_main;
 }
 QT_END_NAMESPACE
 
@@ -20,6 +21,11 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
 
+protected:
+    void mousePressEvent(QMouseEvent *event) override;
+    void mouseMoveEvent(QMouseEvent *event) override;
+    void mouseReleaseEvent(QMouseEvent *event) override;
+
 private:
     void initMainWindow();
     void initStyleSheet();
@@ -27,15 +33,17 @@ private:
     void initConnect();
 
 private:
-    Ui::Widget *ui;
+    Ui::widget_main *ui;
     std::map<QString, QWidget*> m_funcWidgets;
 
     int m_curWinSize;
+    bool m_mouPress;
+    QPoint m_mouPoint;
 
 private slots:
     void on_btn_min_clicked();
     void on_btn_max_clicked();
     void on_btn_close_clicked();
-    void sl_listWidget_clicked(QListWidgetItem *item);
+    void sl_listWidget_clicked(QListWidgetItem*item);
 };
 #endif // WIDGET_H

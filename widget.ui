@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Widget</class>
- <widget class="QWidget" name="Widget">
+ <class>widget_main</class>
+ <widget class="QWidget" name="widget_main">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,18 +13,24 @@
   <property name="windowTitle">
    <string>Widget</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="windowFilePath">
+   <string/>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="topMargin">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="rightMargin">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="bottomMargin">
-    <number>0</number>
+    <number>2</number>
    </property>
    <property name="spacing">
     <number>0</number>
@@ -351,7 +357,7 @@
          <string notr="true"/>
         </property>
         <property name="text">
-         <string>设置</string>
+         <string/>
         </property>
        </widget>
       </item>

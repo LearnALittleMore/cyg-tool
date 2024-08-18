@@ -3,6 +3,8 @@
         <file>image/close.png</file>
         <file>image/max.png</file>
         <file>image/min.png</file>
+        <file>image/github.ico</file>
+        <file>image/github.png</file>
     </qresource>
     <qresource prefix="/stylesheet">
         <file>style/simple.qss</file>

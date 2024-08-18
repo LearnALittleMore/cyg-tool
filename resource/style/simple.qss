@@ -1,5 +1,4 @@
-QWidget#widget_name
-{
+QWidget#widget_name{
     background-color: rgb(255, 255, 255);
     border-right:1px solid rgb(240,240,240);
 }
@@ -10,6 +9,7 @@ QWidget#widget_title{
 
 QPushButton { 
     background-color: transparent; border: none; 
+    border-radius:5px;
 }
 
 QWidget#widget_setting_background{
@@ -22,14 +22,25 @@ QPushButton:hover {
 }
 
 QListWidget#listWidget{
-    bordert:none;
+    border:none;
     border-top:1px solid rgb(240,240,240);
     border-right:1px solid rgb(240,240,240);
     background-color: rgb(255, 255, 255);
+    outline: none;
 }
 
 QListWidget::item {
     height: 30px;
+}
+
+QListWidget::item:hover {
+    background-color:rgb(205, 232, 255);
+    border-radius:5px;
+}
+
+QListWidget::item:selected {
+    background-color:rgb(205, 232, 255);
+    border-radius: 5px;
 }
 
 QLabel{
