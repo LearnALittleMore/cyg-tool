@@ -70,6 +70,7 @@ void Widget::initMainWindow()
     ui->btn_close->setIcon(QIcon(":/icon/image/close.png"));
     ui->btn_max->setIcon(QIcon(":/icon/image/max.png"));
     ui->btn_min->setIcon(QIcon(":/icon/image/min.png"));
+    ui->label_icon->setPixmap(QPixmap(":/icon/image/github_40.png"));
 
     ui->btn_setting->setText("设置");
     ui->label_tool_name->setText("CYG-TOOL");

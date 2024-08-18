@@ -44,5 +44,5 @@ QListWidget::item:selected {
 }
 
 QLabel{
-    font: 700 16pt "Microsoft YaHei UI";
+    font: 700 12pt "Microsoft YaHei UI";
 }

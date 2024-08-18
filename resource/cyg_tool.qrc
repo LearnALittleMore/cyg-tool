@@ -5,6 +5,7 @@
         <file>image/min.png</file>
         <file>image/github.ico</file>
         <file>image/github.png</file>
+        <file>image/github_40.png</file>
     </qresource>
     <qresource prefix="/stylesheet">
         <file>style/simple.qss</file>
