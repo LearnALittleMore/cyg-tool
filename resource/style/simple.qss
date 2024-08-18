@@ -39,6 +39,10 @@ QListWidget::item:selected {
     border-radius: 5px;
 }
 
-QLabel{
+QLabel#label_tool_name{
+    font: 700 12pt "Microsoft YaHei UI";
+}
+
+QLabel#label_func{
     font: 700 12pt "Microsoft YaHei UI";
 }

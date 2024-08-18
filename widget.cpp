@@ -4,6 +4,9 @@
 #include <QFile>
 #include <QMouseEvent>
 
+//功能头文件
+#include "funcs/kbq/kbqwidget.h"
+
 //添加一个新的功能
 #define ADD_FUNC_WIDGET(funcName, className) \
 { \
@@ -92,7 +95,7 @@ void Widget::initStyleSheet()
 
 void Widget::initFuncWidgets()
 {
-    ADD_FUNC_WIDGET("KBQ", QWidget);
+    ADD_FUNC_WIDGET("KBQ", KBQWidget);
     ADD_FUNC_WIDGET("设置", QWidget);
 
     ui->label_func->setText(m_funcWidgets.begin()->first);
