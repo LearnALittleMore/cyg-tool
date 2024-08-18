@@ -1,0 +1,40 @@
+QWidget#widget_name
+{
+    background-color: rgb(255, 255, 255);
+    border-right:1px solid rgb(240,240,240);
+}
+
+QWidget#widget_title
+{
+    background-color: rgb(255, 255, 255);
+}
+
+QPushButton { 
+    background-color: transparent; border: none; 
+}
+
+QPushButton:hover {
+    background-color: rgb(205, 232, 255); 
+}
+
+QPushButton#btn_setting
+{
+    border-right:1px solid rgb(240,240,240);
+    background-color: rgb(255, 255, 255);
+}
+
+QListWidget#listWidget{
+    bordert:none;
+    border-top:1px solid rgb(240,240,240);
+    border-right:1px solid rgb(240,240,240);
+    background-color: rgb(255, 255, 255);
+}
+
+
+QListWidget::item {
+    height: 30px;
+}
+
+QLabel{
+    font: 700 16pt "Microsoft YaHei UI";
+}
