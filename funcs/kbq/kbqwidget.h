@@ -15,8 +15,13 @@ public:
     explicit KBQWidget(QWidget *parent = nullptr);
     ~KBQWidget();
 
+    void initWidget();
+
 private:
     Ui::KBQWidget *ui;
+
+private slots:
+    void on_btn_start_close_clicked();
 };
 
 #endif // KBQWIDGET_H

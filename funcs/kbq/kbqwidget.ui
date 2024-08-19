@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout">
+  <layout class="QGridLayout" name="gridLayout" rowstretch="0,0" columnstretch="1,1" rowminimumheight="0,0">
    <item row="0" column="0" rowspan="2">
     <widget class="QFrame" name="frame_msg">
      <property name="styleSheet">
@@ -21,10 +21,7 @@
 background-color: rgb(255, 255, 255);</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Shape::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Raised</enum>
+      <enum>QFrame::NoFrame</enum>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
@@ -50,7 +47,7 @@ background-color: rgb(255, 255, 255);</string>
        </widget>
       </item>
       <item>
-       <widget class="QPlainTextEdit" name="plainTextEdit">
+       <widget class="QPlainTextEdit" name="plainTextEdit_msg">
         <property name="styleSheet">
          <string notr="true">border:none;
 background-color: rgb(240, 240, 240);</string>
@@ -67,10 +64,7 @@ background-color: rgb(240, 240, 240);</string>
 background-color: rgb(255, 255, 255);</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Shape::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Raised</enum>
+      <enum>QFrame::NoFrame</enum>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
@@ -83,7 +77,7 @@ background-color: rgb(255, 255, 255);</string>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QLineEdit" name="lineEdit">
+         <widget class="QLineEdit" name="lineEdit_ip">
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -103,7 +97,7 @@ background-color: rgb(240, 240, 240);</string>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit_3">
+         <widget class="QLineEdit" name="lineEdit_port">
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -123,7 +117,7 @@ background-color: rgb(240, 240, 240);</string>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="btn_start_close">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -143,8 +137,14 @@ background-color: rgb(240, 240, 240);</string>
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">border-radius:5px;
-background-color: rgb(205, 232, 255);</string>
+           <string notr="true">QPushButton {
+border-radius:5px;
+background-color: rgb(205, 232, 255);
+}
+
+QPushButton:hover {
+    background-color: rgb(255, 165, 0);
+}</string>
           </property>
           <property name="text">
            <string>启动</string>
@@ -236,8 +236,14 @@ background-color: rgb(240, 240, 240);</string>
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">border-radius:5px;
-background-color: rgb(205, 232, 255);</string>
+           <string notr="true">QPushButton {
+border-radius:5px;
+background-color: rgb(205, 232, 255);
+}
+
+QPushButton:hover {
+    background-color: rgb(255, 165, 0);
+}</string>
           </property>
           <property name="text">
            <string>遥控</string>
@@ -247,17 +253,11 @@ background-color: rgb(205, 232, 255);</string>
        </layout>
       </item>
       <item>
-       <spacer name="verticalSpacer">
-        <property name="orientation">
-         <enum>Qt::Orientation::Vertical</enum>
+       <widget class="QPlainTextEdit" name="plainTextEdit_func">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(240, 240, 240);</string>
         </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>159</height>
-         </size>
-        </property>
-       </spacer>
+       </widget>
       </item>
      </layout>
     </widget>
@@ -269,10 +269,7 @@ background-color: rgb(205, 232, 255);</string>
 background-color: rgb(255, 255, 255);</string>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Shape::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Shadow::Raised</enum>
+      <enum>QFrame::NoFrame</enum>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
