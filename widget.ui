@@ -171,9 +171,6 @@
                  <height>20</height>
                 </size>
                </property>
-               <property name="styleSheet">
-                <string notr="true"/>
-               </property>
                <property name="text">
                 <string/>
                </property>
