@@ -6,6 +6,7 @@
 
 //功能头文件
 #include "funcs/kbq/kbqwidget.h"
+#include "funcs/hex_txt_convert/hex_txt_convert.h"
 
 //添加一个新的功能
 #define ADD_FUNC_WIDGET(funcName, className) \
@@ -30,7 +31,6 @@ Widget::Widget(QWidget *parent)
     initMainWindow();
     initStyleSheet();
     initFuncWidgets();
-    initConnect();
 }
 
 Widget::~Widget()
@@ -96,16 +96,12 @@ void Widget::initStyleSheet()
 void Widget::initFuncWidgets()
 {
     ADD_FUNC_WIDGET("KBQ", KBQWidget);
+    ADD_FUNC_WIDGET("HexTxt", HexTxtConvert);
     ADD_FUNC_WIDGET("设置", QWidget);
 
     ui->label_func->setText(m_funcWidgets.begin()->first);
     ui->listWidget->setCurrentRow(0);
     ui->stackedWidget->setCurrentIndex(0);
-}
-
-void Widget::initConnect()
-{
-    connect(ui->listWidget, SIGNAL(itemClicked(QListWidgetItem*)), this, SLOT(sl_listWidget_clicked(QListWidgetItem*)));
 }
 
 void Widget::on_btn_min_clicked()
@@ -140,7 +136,7 @@ void Widget::on_btn_close_clicked()
     this->close();
 }
 
-void Widget::sl_listWidget_clicked(QListWidgetItem*item)
+void Widget::on_listWidget_itemClicked(QListWidgetItem*item)
 {
     auto it = m_funcWidgets.find(item->text());
 

@@ -10,15 +10,18 @@ CONFIG += c++17
 
 SOURCES += \
     funcs/kbq/kbqwidget.cpp \
+    funcs/hex_txt_convert/hex_txt_convert.cpp \
     main.cpp \
     widget.cpp
 
 HEADERS += \
     funcs/kbq/kbqwidget.h \
+    funcs/hex_txt_convert/hex_txt_convert.h \
     widget.h
 
 FORMS += \
     funcs/kbq/kbqwidget.ui \
+    funcs/hex_txt_convert/hex_txt_convert.ui \
     widget.ui
 
 # Default rules for deployment.

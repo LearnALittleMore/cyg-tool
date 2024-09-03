@@ -30,7 +30,6 @@ private:
     void initMainWindow();
     void initStyleSheet();
     void initFuncWidgets();
-    void initConnect();
 
 private:
     Ui::widget_main *ui;
@@ -44,6 +43,6 @@ private slots:
     void on_btn_min_clicked();
     void on_btn_max_clicked();
     void on_btn_close_clicked();
-    void sl_listWidget_clicked(QListWidgetItem*item);
+    void on_listWidget_itemClicked(QListWidgetItem*item);
 };
 #endif // WIDGET_H
