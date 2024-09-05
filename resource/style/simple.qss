@@ -17,9 +17,8 @@ QPushButton:hover {
 }
 
 QPushButton#btn_close:hover {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(251, 115, 115);
 }
-
 
 QListWidget#listWidget{
     border:none;

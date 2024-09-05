@@ -7,6 +7,7 @@
 //功能头文件
 #include "funcs/kbq/kbqwidget.h"
 #include "funcs/hex_txt_convert/hex_txt_convert.h"
+#include "funcs/http_post/http_post_widget.h"
 
 //添加一个新的功能
 #define ADD_FUNC_WIDGET(funcName, className) \
@@ -29,7 +30,7 @@ Widget::Widget(QWidget *parent)
     ui->setupUi(this);
 
     initMainWindow();
-    initStyleSheet();
+    initStyleSheet(); /* stylesheet的设置在功能窗体之前，功能窗体的外观由其自定义 */
     initFuncWidgets();
 }
 
@@ -68,7 +69,7 @@ void Widget::mouseReleaseEvent(QMouseEvent *event)
 void Widget::initMainWindow()
 {
     this->setWindowFlag(Qt::FramelessWindowHint);
-    this->setWindowTitle("cyg-tool");
+    this->setWindowTitle("tool-box");
 
     ui->btn_close->setIcon(QIcon(":/icon/image/close.png"));
     ui->btn_max->setIcon(QIcon(":/icon/image/max.png"));
@@ -97,6 +98,7 @@ void Widget::initFuncWidgets()
 {
     ADD_FUNC_WIDGET("KBQ", KBQWidget);
     ADD_FUNC_WIDGET("HexTxt", HexTxtConvert);
+    ADD_FUNC_WIDGET("HttpPost", HttpPostWidget);
     ADD_FUNC_WIDGET("设置", QWidget);
 
     ui->label_func->setText(m_funcWidgets.begin()->first);
