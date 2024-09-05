@@ -25,12 +25,26 @@ void HttpPostWidget::initWidget()
 
 void HttpPostWidget::on_btn_cli_clicked()
 {
+    ui->btn_cli->setText("client *");
+    ui->btn_serv->setText("server");
     ui->stackedWidget->setCurrentIndex(0);
 }
 
 void HttpPostWidget::on_btn_serv_clicked()
 {
+    ui->btn_cli->setText("client");
+    ui->btn_serv->setText("server *");
     ui->stackedWidget->setCurrentIndex(1);
+}
+
+void HttpPostWidget::on_btn_connect_clicked()
+{
+    ui->btn_conn_light->setStyleSheet("background-color: rgb(85, 245,127);");
+}
+
+void HttpPostWidget::on_btn_disconnect_clicked()
+{
+    ui->btn_conn_light->setStyleSheet("background-color: rgb(251, 115,115);");
 }
 
 void HttpPostWidget::on_btn_servStart_clicked()

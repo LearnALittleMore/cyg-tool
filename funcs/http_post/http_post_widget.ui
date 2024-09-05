@@ -55,7 +55,7 @@ background-color: rgb(255, 255, 255);
          </size>
         </property>
         <property name="text">
-         <string>client</string>
+         <string>client *</string>
         </property>
        </widget>
       </item>
@@ -148,7 +148,7 @@ border-radius:3px;
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_15">
+          <widget class="QPushButton" name="btn_connect">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
              <horstretch>0</horstretch>
@@ -183,7 +183,7 @@ background-color: rgb(255, 165, 0);
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_16">
+          <widget class="QPushButton" name="btn_disconnect">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
              <horstretch>0</horstretch>
@@ -218,7 +218,7 @@ background-color: rgb(255, 165, 0);
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_17">
+          <widget class="QPushButton" name="btn_conn_light">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
              <horstretch>0</horstretch>
@@ -238,7 +238,7 @@ background-color: rgb(255, 165, 0);
             </size>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 85, 0);</string>
+            <string notr="true">background-color: rgb(251, 115,115);</string>
            </property>
            <property name="text">
             <string/>
@@ -247,65 +247,7 @@ background-color: rgb(255, 165, 0);
          </item>
         </layout>
        </item>
-       <item row="1" column="0">
-        <widget class="QLineEdit" name="lineEdit_14">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>22</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>22</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLineEdit{
-background-color: rgb(240, 240, 240);
-border-radius:5px;
-}
-</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QPushButton" name="pushButton_10">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>40</width>
-           <height>22</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>40</width>
-           <height>22</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-border-radius:5px
-;background-color: rgb(205, 232, 255);
-}
-
-QPushButton:hover {
-background-color: rgb(255, 165, 0);
-}</string>
-         </property>
-         <property name="text">
-          <string>发送</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0" colspan="2">
+       <item row="2" column="0">
         <widget class="QPlainTextEdit" name="plainTextEdit_7">
          <property name="styleSheet">
           <string notr="true">QPlainTextEdit{
@@ -316,59 +258,18 @@ border-radius:5px;
          </property>
         </widget>
        </item>
-       <item row="3" column="0">
-        <widget class="QLineEdit" name="lineEdit_13">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>22</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>22</height>
-          </size>
-         </property>
+       <item row="2" column="1">
+        <widget class="QPlainTextEdit" name="plainTextEdit_9">
          <property name="styleSheet">
-          <string notr="true">QLineEdit{
+          <string notr="true">QPlainTextEdit{
 background-color: rgb(240, 240, 240);
-border-radius:3px;
+border-radius:5px;
 }
 </string>
          </property>
         </widget>
        </item>
-       <item row="3" column="1">
-        <widget class="QPushButton" name="pushButton_11">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>22</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>40</width>
-           <height>22</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-border-radius:5px
-;background-color: rgb(205, 232, 255);
-}
-
-QPushButton:hover {
-background-color: rgb(255, 165, 0);
-}</string>
-         </property>
-         <property name="text">
-          <string>发送</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="0" colspan="2">
+       <item row="4" column="0">
         <widget class="QPlainTextEdit" name="plainTextEdit_8">
          <property name="styleSheet">
           <string notr="true">QPlainTextEdit{
@@ -378,6 +279,141 @@ border-radius:5px;
 </string>
          </property>
         </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPlainTextEdit" name="plainTextEdit_10">
+         <property name="styleSheet">
+          <string notr="true">QPlainTextEdit{
+background-color: rgb(240, 240, 240);
+border-radius:5px;
+}
+</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_14">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+background-color: rgb(240, 240, 240);
+border-radius:5px;
+}
+</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_10">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+border-radius:5px
+;background-color: rgb(205, 232, 255);
+}
+
+QPushButton:hover {
+background-color: rgb(255, 165, 0);
+}</string>
+           </property>
+           <property name="text">
+            <string>发送</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_13">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+background-color: rgb(240, 240, 240);
+border-radius:3px;
+}
+</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_11">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+border-radius:5px
+;background-color: rgb(205, 232, 255);
+}
+
+QPushButton:hover {
+background-color: rgb(255, 165, 0);
+}</string>
+           </property>
+           <property name="text">
+            <string>发送</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </widget>
