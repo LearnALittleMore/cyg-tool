@@ -99,7 +99,6 @@ void Widget::initFuncWidgets()
     ADD_FUNC_WIDGET("KBQ", KBQWidget);
     ADD_FUNC_WIDGET("HexTxt", HexTxtConvert);
     ADD_FUNC_WIDGET("HttpPost", HttpPostWidget);
-    ADD_FUNC_WIDGET("设置", QWidget);
 
     ui->label_func->setText(m_funcWidgets.begin()->first);
     ui->listWidget->setCurrentRow(0);

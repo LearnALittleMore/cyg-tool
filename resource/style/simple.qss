@@ -1,10 +1,17 @@
 QWidget#widget_name{
     background-color: rgb(255, 255, 255);
     border-right:1px solid rgb(240,240,240);
+    border-bottom:1px solid rgb(240,240,240);
 }
 
 QWidget#widget_title{
     background-color: rgb(255, 255, 255);
+    border-bottom:1px solid rgb(240,240,240);
+}
+
+QWidget#widget_menu_background{
+    background-color: rgb(255, 255, 255);
+    border-right:1px solid rgb(240,240,240);
 }
 
 QPushButton { 
@@ -22,9 +29,6 @@ QPushButton#btn_close:hover {
 
 QListWidget#listWidget{
     border:none;
-    border-top:1px solid rgb(240,240,240);
-    border-right:1px solid rgb(240,240,240);
-    background-color: rgb(255, 255, 255);
     outline: none;
 }
 

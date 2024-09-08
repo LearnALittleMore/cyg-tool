@@ -24,12 +24,6 @@ private:
 private slots:
     void on_btn_cli_clicked();
     void on_btn_serv_clicked();
-
-    void on_btn_connect_clicked();
-    void on_btn_disconnect_clicked();
-
-    void on_btn_servStart_clicked();
-    void on_btn_servStop_clicked();
 };
 
 #endif // HTTP_POST_WIDGET_H
