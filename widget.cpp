@@ -121,13 +121,14 @@ void Widget::on_btn_max_clicked()
     {
         this->resize(800,600);
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
         //居中
         QScreen *screen = QGuiApplication::primaryScreen();
         QRect screenGeometry = screen->geometry();
         int x = (screenGeometry.width() - this->width()) / 2;
         int y = (screenGeometry.height() - this->height()) / 2;
         this->move(x, y);
-
+#endif
         m_curWinSize = 0;
     }
 }
